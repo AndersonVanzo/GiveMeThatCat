@@ -8,7 +8,7 @@ import { Image, StyleSheet, Text, View } from "react-native";
 import Cat from './src/assets/icons/cat.svg';
 import Info from './src/assets/icons/info.svg';
 
-const Tab = createBottomTabNavigator();
+const Tab = createBottomTabNavigator<RootScreenProps>();
 
 export const App = () => {
 
