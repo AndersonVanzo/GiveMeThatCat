@@ -47,7 +47,7 @@ export const App = () => {
 
   return (
     <NavigationContainer>
-      <Tab.Navigator screenOptions={Configs}>
+      <Tab.Navigator initialRouteName={'Home'} screenOptions={Configs}>
         <Tab.Screen
           name={'Home'}
           component={Home}
