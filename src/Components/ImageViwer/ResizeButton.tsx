@@ -3,8 +3,8 @@ import {
   StyleSheet,
   TouchableOpacity
 } from "react-native";
-import Maximize from '../../assets/icons/maximize.svg';
-import Minimize from '../../assets/icons/minimize.svg';
+import Maximize from '../../Assets/Icons/maximize.svg';
+import Minimize from '../../Assets/Icons/minimize.svg';
 
 interface ResizeButtonProps {
   state: ResizeState;
@@ -27,13 +27,13 @@ export default memo(ResizeButton);
 
 const Styles = StyleSheet.create({
   container: {
-    width: 48,
+    alignItems: 'center',
     height: 48,
     justifyContent: 'center',
-    alignItems: 'center',
     position: 'absolute',
-    top: 12,
     right: 12,
+    top: 12,
+    width: 48,
     zIndex: 2,
   },
 });

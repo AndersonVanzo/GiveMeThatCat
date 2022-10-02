@@ -1,12 +1,16 @@
 import React from "react";
+import {
+  StyleSheet,
+  Text,
+  View,
+} from "react-native";
 import { BottomTabNavigationOptions, createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from "@react-navigation/native";
-import { Home } from "./src/Pages/Home/Home";
-import { About } from "./src/Pages/About/About";
 import { Colors } from "./src/Configs/Colors";
-import { Image, StyleSheet, Text, View } from "react-native";
-import Cat from './src/assets/icons/cat.svg';
-import Info from './src/assets/icons/info.svg';
+import { About } from "./src/Pages/About/About";
+import { Home } from "./src/Pages/Home/Home";
+import Info from './src/Assets/Icons/info.svg';
+import Cat from './src/Assets/Icons/cat.svg';
 
 const Tab = createBottomTabNavigator<RootScreenProps>();
 
@@ -16,14 +20,14 @@ export const App = () => {
     tabBarShowLabel: false,
     headerShown: false,
     tabBarStyle: {
-      position: 'absolute',
-      bottom: 0,
-      left: 0,
-      right: 0,
       backgroundColor: Colors.primary,
       borderTopLeftRadius: 48,
       borderTopRightRadius: 48,
+      bottom: 0,
       height: 84,
+      left: 0,
+      position: 'absolute',
+      right: 0,
     }
   }
 

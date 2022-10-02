@@ -4,8 +4,8 @@ import {
   TouchableOpacity,
 } from "react-native";
 import { Colors } from "../../Configs/Colors";
-import Download from '../../assets/icons/download.svg';
-import Next from '../../assets/icons/next.svg';
+import Download from '../../Assets/Icons/download.svg';
+import Next from '../../Assets/Icons/next.svg';
 
 interface ViwerButtonProps {
   type: 'download' | 'next',
@@ -28,12 +28,12 @@ export default memo(ViwerButton);
 
 const Styles = StyleSheet.create({
   container: {
-    width: 72,
-    height: 72,
-    borderRadius: 46,
-    borderColor: Colors.primary,
-    borderWidth: 2,
-    justifyContent: 'center',
     alignItems: 'center',
+    borderColor: Colors.primary,
+    borderRadius: 46,
+    borderWidth: 2,
+    height: 72,
+    justifyContent: 'center',
+    width: 72,
   },
 });

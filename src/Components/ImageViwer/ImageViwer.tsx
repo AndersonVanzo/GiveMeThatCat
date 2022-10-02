@@ -6,8 +6,8 @@ import {
 import LinearGradient from "react-native-linear-gradient";
 import ResizeButton from "./ResizeButton";
 import ViwerButton from "./ViwerButton";
-import { Styles } from "./Styles";
 import EmpityViwer from "./EmpityViwer";
+import { Styles } from "./Styles";
 
 interface ImageViwerProps {
   uri: string;

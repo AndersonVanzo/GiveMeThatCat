@@ -1,5 +1,9 @@
 import React, { memo } from "react";
-import { ActivityIndicator, StyleSheet, View } from "react-native";
+import {
+  ActivityIndicator,
+  StyleSheet,
+  View,
+} from "react-native";
 import { Colors } from "../../Configs/Colors";
 
 const EmpityViwer = (): JSX.Element => {
